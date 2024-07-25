@@ -1,77 +1,135 @@
-// 1. Написать 3 любых примера с `%` и результат этого выражения (5%2 === 1).
-//2 % 2 === 0 (2 + 0, где 0 - остаток от деления)
-//7 % 4 === 3 (4 + 3, где 3 - остаток от деления)
-//8 % 3 === 2 (3 + 3 + 2, где 2 - остаток от деления)
-// 2. Если переменная **test** равна **true**, то выведи **“Верно”,** иначе выведи **“Неверно”.** 
-// let test = 'test';
-// (!!test ) ? console.log('Верно') : console.log('Неверно') ;
-// 3. Если переменная **test** не равна **true**, то выведи “Верно”, иначе выведи “Неверно”. 
-// let test = 'test';
-// (test != true ) ? console.log('Верно') : console.log('Неверно') ;
-// 4. Если переменная `a` больше нуля и меньше 5-ти, то выведи “Верно“, иначе выведи “Неверно“. 
-// let a = 3;
-// (a > 0 && a < 5 ) ? console.log('Верно') : console.log('Неверно') ;
-// 5. Если переменная `a` равна нулю или равна двум, то прибавь к ней 7, иначе раздели ее на 3.
-// let a = 1;
-// (a == 0 || a == 2 ) ? console.log(a + 7) : console.log(a / 3) ;
-// 6. Если переменная `a` равна или меньше 1, а переменная `b` больше или равна 3, то выведи сумму этих переменных, иначе выведи их разность. 
-// let a = 4;
-// let b  = 10;
-// (a <= 1 && b >= 3 ) ? console.log(a + b) : console.log(a - b);
-// 7. Если переменная `a` больше 2-х и меньше 11-ти, или переменная `b` больше или равна 6-ти и меньше 14-ти, то выведи “Верно”, в противном случае выведите “Неверно”.
-// let a = 4;
-// let b = 3;
-// ((a > 2 && a < 11) && (b >= 6 || b == 3) ) ? console.log('Beрно') : console.log('Неверно');
-// 8. Написать алгоритм который проверит, **попадает ли число в заданный диапазон**.
-// let number = 20;
-// let start = 1;
-// let end = 10;
-// (number >= start && number <= end) ? console.log('Попадает в диапазон') :  console.log('Не попадает в диапазон');
-// 9. Написать алгоритм, который выводит **наименьшее из двух чисел**.
-// let numberOne = 20;
-// let numberTwo = 21;
 
-// if(numberOne > numberTwo){
-//     console.log('наименьшее из двух чисел', numberTwo);
-// }else if(numberOne == numberTwo){
-//     console.log('числа равны');
-// }else{
-//     console.log('наименьшее из двух чисел', numberOne);
+// 1. Выведи в консоль числа от 1 до 100.
+// for (let i = 1; i <= 100; i++){
+//     console.log(i)
 // }
-// 10. Написать алгоритм, который определяет, является ли число **положительным**, **отрицательным** или **равным нулю**.
-
-// let number = -3;
-
-// if(number == 0){
-//     console.log('числo равно 0');
-// }else if(number > 0){
-//     console.log('числo больше 0');
-// }else{
-//     console.log('числo меньше 0');
+// 2. Выведи в консоль числа от 11 до 33.
+// for (let i = 11; i <= 33; i++){
+//     console.log(i)
 // }
-// 11. Что выведет в консоль и почему ?
-// let num = 5;
-// console.log(num == "5"); //? true - приведение строки к числу
-// console.log(num === "5"); //? false - учитывается тип и значение
-// console.log(num == true); //?! false - приведение true к числу (1)
-// ​
-// 12. Что выведет в консоль и почему ?
-// console.log(5 && 3); //? 3 - последний true
-// console.log(0 && 3); //? 0 - первый false
-// console.log(5 || 3); //? 5 - первый true
-// console.log(0 || 3); //? 3 - первый true
-// console.log(0 || 3 && 6); //? 6 (сразу выполнится && - будет 6 (последний true), потом выведет 6 (первый true))
-// console.log(0 && 3 || 6); //? 6 (сразу выполнится && - будет 0  (первый false), потом выведет 6 (первый true))
-// 13. Что выведет в консоль и почему ?
-// let count = 6;
-// console.log(count++); //? 6 - постфиксная форма - сразу выведет число, потом добавит +1
-// console.log(++count); //? 8 - префиксная форма - сразу добавит +1, потом выведет число
-// console.log(count++); //? 8 - постфиксная форма - сразу выведет число, потом добавит +1
-// console.log(count); //? 9
-// ​
-// 14. Что выведет в консоль и почему ?
-// let count = 4;
-// console.log(count--); //? 4 - постфиксная форма - сразу выведет число, потом отнимет -1
-// console.log(count--); //? 3 - постфиксная форма - сразу выведет число, потом отнимет -1
-// console.log(count); //? 2 
-// console.log(--count); //? 1 - префиксная форма - сразу отнимет -1, потом выведет число
+// 3. Выведи в консоль все целые числа от 10 до 1 в обратном порядке:
+// for (let i = 10; i >= 1; i--){
+//     console.log(i)
+// }
+// 4.Выведи столбец четных чисел в промежутке от 0 до 100.
+// for (let i = 0; i <= 100; i++){
+//     if(i % 2 === 0){
+//         console.log(i)
+//     } 
+// }
+// 5. Выведи в консоль таблицу умножения на 5. 
+// for (let i = 1; i <= 10; i++){
+//     console.log('5 x ', i, ' = ', 5 * i);
+// }
+// 6. С помощью цикла найди сумму чисел от 1 до 100.
+// let sum = null;
+// for (let i = 1; i <= 100; i++){
+//     sum += i; 
+// }
+// console.log(sum);
+// 7.Напиши switch, который проверит значение переменной a и выведет в консоль соответствующее сообщение а равен 1,а равен 2,а равен 3,а не равен ничего из перечисленого .
+// const a = 4;
+// switch (a) {
+//   case 1:
+//     console.log('а равен 1');
+//     break;
+//   case 2:
+//     console.log('а равен 2');
+//     break;
+//   case 3:
+//     console.log('а равен 3');
+//     break;
+
+//   default:
+//     console.log('а не равен ничего из перечисленого');
+//     break;
+// }
+// 8.Напиши switch который принимает на вход число от 1 до 7 и выводит в консоль соответствующий день недели (1 - понедельник, 2 - вторник и т.д.):
+// const day = 4;
+// switch (day) {
+//   case 1:
+//     console.log('понедельник');
+//     break;
+//   case 2:
+//     console.log('вторник');
+//     break;
+//   case 3:
+//     console.log('среда');
+//     break;
+//   case 4:
+//     console.log('четверг');
+//     break;
+//   case 5:
+//     console.log('пятница');
+//     break;
+//   case 6:
+//     console.log('суббота');
+//     break;
+//   case 7:
+//     console.log('воскресенье');
+//     break;
+
+//   default:
+//     console.log('число не входит в диапазон от 1 до 7');
+//     break;
+// }
+// 9. Напиши switch, который принимает на вход символ латинского алфавита и выводит в консоль его порядковый номер (A - 1, B - 2 и т.д.)
+// const symbol = 'a';
+// switch (symbol.toUpperCase()) {
+//     case 'A': console.log ('1'); break;
+//     case 'B': console.log ('2'); break;
+//     case 'C': console.log ('3'); break;
+//     case 'D': console.log ('4'); break;
+//     case 'E': console.log ('5'); break;
+//     case 'F': console.log ('6'); break;
+//     case 'G': console.log ('7'); break;
+//     case 'H': console.log ('8'); break;
+//     case 'I': console.log ('9'); break;
+//     case 'J': console.log ('10'); break;
+//     case 'K': console.log ('11'); break;
+//     case 'L': console.log ('12'); break;
+//     case 'M': console.log ('13'); break;
+//     case 'N': console.log ('14'); break;
+//     case 'O': console.log ('15'); break;
+//     case 'P': console.log ('16'); break;
+//     case 'Q': console.log ('17'); break;
+//     case 'R': console.log ('18'); break;
+//     case 'S': console.log ('19'); break;
+//     case 'T': console.log ('20'); break;
+//     case 'U': console.log ('21'); break;
+//     case 'V': console.log ('22'); break;
+//     case 'W': console.log ('23'); break;
+//     case 'X': console.log ('24'); break;
+//     case 'Y': console.log ('25'); break;
+//     case 'Z': console.log ('26'); break;
+//     default: console.log('введите символ латинского алфавита');break;
+// }
+
+// 10. Напиши switch, который принимает на вход число от 1 до 12 и выводит в консоль соответствующее ему время года (зима, лето, осень, весна) (потренируй объедине́ние case-ов)
+
+// const a = 4;
+// switch (a) {
+//   case 1:
+//   case 2:
+//   case 12:
+//     console.log('зима');
+//     break;
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log('весна');
+//     break;
+//   case 6:
+//   case 7:
+//   case 8:
+//     console.log('лето');
+//     break;
+//   case 9:
+//   case 10:
+//   case 11:
+//     console.log('осень');
+//     break;
+//   default:
+//     console.log('число не входит в диапазон от 1 до 12');
+//     break;
+// }
