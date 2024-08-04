@@ -1,6 +1,67 @@
-//Циклы нужны, чтобы повторять одно действие определенное количество раз. 
-//- while | do while | for
-//цикл while позволяет выполнять код многократно, пока условие истинно.
-//цикл do-while похож на цикл while, но с одним отличием: он выполняет блок кода один раз перед проверкой условия.
-//Разница while и do while в том, в какой момент проверяется условие.  В while сразу проверяется условие, а потом выполняется тело, а в do while сразу выполнится тело и только потом проверится условие. 
+console.log(a);
+var a = 5;
+
+// let s = 's';// как создать переменную symbol
+
+let s = Symbol('');
+
+//* / - унарные операторы
+
+// d
+//от 20 до 1 по убыванию
+
+// let i = 20;
+
+// do{
+//     console.log(i);
+//     i--;
+// }while(i >= 1)
+
+// for(let i = 20; i >= 1; i--){
+//     console.log(i);
+// }
+
+const x = 1; 
+const y = 2; 
+switch (x + y) { 
+    default: 
+        console.log('Нет совпадений'); 
+    case "1": 
+        console.log('1'); 
+        break; 
+    case "2": 
+        console.log('2'); 
+        break; 
+    case "3": 
+        console.log('3'); 
+        break; 
+}
+
+function sum(a, b) { 
+    a + b; 
+} 
+console.log( 
+    sum(1, 2), //undefined
+    typeof sum(1, 2),  //undefined
+    typeof sum //function
+);
+
+console.log(2 && 3 && 4);  //4
+console.log(2 || 3 || 4);  //2
+console.log(2 || 3 && 4);  //2
+console.log("pasha" || 0); //"pasha"
+console.log("pasha" && 0); //0
+console.log(0 && "pasha"); //0
+console.log(0 || "pasha"); // "pasha"
+console.log(null || 7 && -4); //-4
+console.log(null && 7 || -4); //-4
+console.log(null && !7 || -4); //-4
+
+let count = 2;  
+console.log(count++);  //2
+console.log(++count);  //4
+console.log(--count);  //3
+console.log(count++);  //3
+console.log(count--);  //4
+console.log(count);    //3
 

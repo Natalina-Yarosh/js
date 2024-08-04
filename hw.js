@@ -1,135 +1,119 @@
+1. Напиши функцию, которая проверяет, является ли число четным или нечетным.
 
-// 1. Выведи в консоль числа от 1 до 100.
-// for (let i = 1; i <= 100; i++){
-//     console.log(i)
-// }
-// 2. Выведи в консоль числа от 11 до 33.
-// for (let i = 11; i <= 33; i++){
-//     console.log(i)
-// }
-// 3. Выведи в консоль все целые числа от 10 до 1 в обратном порядке:
-// for (let i = 10; i >= 1; i--){
-//     console.log(i)
-// }
-// 4.Выведи столбец четных чисел в промежутке от 0 до 100.
-// for (let i = 0; i <= 100; i++){
-//     if(i % 2 === 0){
-//         console.log(i)
-//     } 
-// }
-// 5. Выведи в консоль таблицу умножения на 5. 
-// for (let i = 1; i <= 10; i++){
-//     console.log('5 x ', i, ' = ', 5 * i);
-// }
-// 6. С помощью цикла найди сумму чисел от 1 до 100.
-// let sum = null;
-// for (let i = 1; i <= 100; i++){
-//     sum += i; 
-// }
-// console.log(sum);
-// 7.Напиши switch, который проверит значение переменной a и выведет в консоль соответствующее сообщение а равен 1,а равен 2,а равен 3,а не равен ничего из перечисленого .
-// const a = 4;
-// switch (a) {
-//   case 1:
-//     console.log('а равен 1');
-//     break;
-//   case 2:
-//     console.log('а равен 2');
-//     break;
-//   case 3:
-//     console.log('а равен 3');
-//     break;
+function isEvenOrOdd(number) {
+    if(number % 2  === 0){
+        return 'Четное число'
+    }else{
+        return 'Нечетное число'
+    }
+}
 
-//   default:
-//     console.log('а не равен ничего из перечисленого');
-//     break;
-// }
-// 8.Напиши switch который принимает на вход число от 1 до 7 и выводит в консоль соответствующий день недели (1 - понедельник, 2 - вторник и т.д.):
-// const day = 4;
-// switch (day) {
-//   case 1:
-//     console.log('понедельник');
-//     break;
-//   case 2:
-//     console.log('вторник');
-//     break;
-//   case 3:
-//     console.log('среда');
-//     break;
-//   case 4:
-//     console.log('четверг');
-//     break;
-//   case 5:
-//     console.log('пятница');
-//     break;
-//   case 6:
-//     console.log('суббота');
-//     break;
-//   case 7:
-//     console.log('воскресенье');
-//     break;
+console.log(isEvenOrOdd(4)); // Вывод: "Четное число"
+console.log(isEvenOrOdd(7)); // Вывод: "Нечетное число"
 
-//   default:
-//     console.log('число не входит в диапазон от 1 до 7');
-//     break;
-// }
-// 9. Напиши switch, который принимает на вход символ латинского алфавита и выводит в консоль его порядковый номер (A - 1, B - 2 и т.д.)
-// const symbol = 'a';
-// switch (symbol.toUpperCase()) {
-//     case 'A': console.log ('1'); break;
-//     case 'B': console.log ('2'); break;
-//     case 'C': console.log ('3'); break;
-//     case 'D': console.log ('4'); break;
-//     case 'E': console.log ('5'); break;
-//     case 'F': console.log ('6'); break;
-//     case 'G': console.log ('7'); break;
-//     case 'H': console.log ('8'); break;
-//     case 'I': console.log ('9'); break;
-//     case 'J': console.log ('10'); break;
-//     case 'K': console.log ('11'); break;
-//     case 'L': console.log ('12'); break;
-//     case 'M': console.log ('13'); break;
-//     case 'N': console.log ('14'); break;
-//     case 'O': console.log ('15'); break;
-//     case 'P': console.log ('16'); break;
-//     case 'Q': console.log ('17'); break;
-//     case 'R': console.log ('18'); break;
-//     case 'S': console.log ('19'); break;
-//     case 'T': console.log ('20'); break;
-//     case 'U': console.log ('21'); break;
-//     case 'V': console.log ('22'); break;
-//     case 'W': console.log ('23'); break;
-//     case 'X': console.log ('24'); break;
-//     case 'Y': console.log ('25'); break;
-//     case 'Z': console.log ('26'); break;
-//     default: console.log('введите символ латинского алфавита');break;
-// }
+2. Напиши функцию, которая определяет, является ли число положительным, отрицательным или равным нулю. 
 
-// 10. Напиши switch, который принимает на вход число от 1 до 12 и выводит в консоль соответствующее ему время года (зима, лето, осень, весна) (потренируй объедине́ние case-ов)
+function checkNumber(number) {
+    if(number === 0){
+        return  "Ноль"
+    } else if (number < 0){
+        return "Отрицательное число"
+    }else{
+        return "Положительное число"
+    }
+}
 
-// const a = 4;
-// switch (a) {
-//   case 1:
-//   case 2:
-//   case 12:
-//     console.log('зима');
-//     break;
-//   case 3:
-//   case 4:
-//   case 5:
-//     console.log('весна');
-//     break;
-//   case 6:
-//   case 7:
-//   case 8:
-//     console.log('лето');
-//     break;
-//   case 9:
-//   case 10:
-//   case 11:
-//     console.log('осень');
-//     break;
-//   default:
-//     console.log('число не входит в диапазон от 1 до 12');
-//     break;
-// }
+console.log(checkNumber(5)); // Вывод: "Положительное число"
+console.log(checkNumber(-3)); // Вывод: "Отрицательное число"
+console.log(checkNumber(0)); // Вывод: "Ноль"
+
+3. Напиши функцию, которая выводит большее из двух чисел.
+
+function findGreaterNumber(number1, number2) {
+    if (number1 === number2){
+        return "Числа равны"
+    }else if (number1 > number2){
+        return number1
+    }else{
+        return number2
+    }
+}
+
+console.log(findGreaterNumber(5, 8)); // Вывод: 8
+console.log(findGreaterNumber(10, 3)); // Вывод: 10
+console.log(findGreaterNumber(7, 7)); // Вывод: "Числа равны"
+
+4. Напиши функцию, которая проверяет, попадает ли переданное число в заданный диапазон.
+
+function isNumberInRange(number, min, max) {
+    if (number <= max && number >= min ){
+        return true
+    }else{
+        return false
+    }
+}
+
+console.log(isNumberInRange(5, 1, 10)); // Вывод: true
+console.log(isNumberInRange(15, 1, 10)); // Вывод: false
+console.log(isNumberInRange(0, -5, 5)); // Вывод: true
+
+5. Напиши функцию, которая принимает на вход два числа и выводит в консоль их сумму, если они оба положительны, и их разность, если одно из чисел отрицательное.
+
+function performOperation(num1, num2) {
+    if(num1 < 0 || num2 < 0){
+        return console.log('Разность чисел:',  num1 - num2);
+    }else{
+        return console.log('Сумма чисел:',  num1 + num2);
+    }
+}
+
+performOperation(5, 3); // Вывод: Сумма чисел: 8
+performOperation(10, -3); // Вывод: Разность чисел: 13
+performOperation(-2, 8); // Вывод: Разность чисел: -10
+
+6. Напиши функцию, которая принимает на вход число и выводит в консоль таблицу умножения для этого числа от 1 до 10. 
+
+let multiplicationTable =  (number) => {
+    for(let i = 1; i <= 10; i++){
+        console.log( number, 'x', i, ' = ', number * i);
+    }
+}
+
+multiplicationTable(5);
+
+7. Напиши функцию, которая принимает на вход число и возвращает его квадрат, если оно больше 10, и его куб, если оно меньше или равно 10.
+
+function squareOrCube(number) {
+    if(number > 10){
+        return  number ** 2
+    }else{
+        return  number ** 3
+    }
+}
+
+console.log(squareOrCube(5)); // Вывод: 125
+console.log(squareOrCube(15)); // Вывод: 225
+console.log(squareOrCube(10)); // Вывод: 1000
+
+8. Напиши функцию, которая принимает на вход два числа и возвращает их сумму, если оба числа положительны, и их произведение, если одно или оба числа отрицательные.
+
+function performOperation(num1, num2) {
+    if(num1 < 0 || num2 < 0){
+        return console.log('Разность чисел:',  num1 - num2);
+    }else{
+        return console.log('Сумма чисел:',  num1 + num2);
+    }
+}
+
+function sumOrProduct(num1, num2) {
+    if(num1 < 0 || num2 < 0){
+        return num1 * num2
+    }else{
+        return num1 + num2
+    }
+}
+
+console.log(sumOrProduct(5, 3)); // Вывод: 8
+console.log(sumOrProduct(-2, 8)); // Вывод: -16
+console.log(sumOrProduct(10, -3)); // Вывод: -30
+console.log(sumOrProduct(-4, -2)); // Вывод: 8
